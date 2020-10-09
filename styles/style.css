@@ -1,8 +1,12 @@
-
+body{
+    /* display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center; */
+}
 
 header{
-    display: flex;
-    flex-direction: row;
+
     justify-content: space-between;
 }
 
@@ -14,6 +18,31 @@ h2{
     font-size: .5em;
 }
 
+.space-apart{
+    justify-content: space-between;
+}
+
+
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+    display: flex;
+    flex-direction: row;
+}
+
+#print-icon{
+    float: right;
+}
+
 #header-text{
     float: right;
+}
+
+#print-icon{
+    width: 13px;
+    height: 10px;
 }

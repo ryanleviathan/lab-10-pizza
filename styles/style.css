@@ -1,15 +1,109 @@
+html{
+    
+}
+
+button{
+    height: 30px
+}
+
+label{
+    width: 200px;
+    word-wrap: normal;
+}
+
 body{
-    /* display:flex;
+    display:flex;
     flex-direction: column;
     justify-items: center;
-    align-items: center; */
+    align-items: center;
+    justify-content: center;
+    align-content: center;
 }
 
 header{
-
+    display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    border: 1px solid black;
+    width: 83%;
 }
 
+#header-icons{
+    float: right;
+}
+
+#header-left{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+#body-top{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+label{
+    width: 400px;
+    margin: 5px;
+}
+
+#body-bottom{
+    display: flex;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+}
+
+#bullet-area{
+    width: 850px;
+    height: 250px;
+    font-size: 1.25em;
+    display: flex;
+    flex-direction: row;
+    border: 1px, solid, black;
+    background-image: url(../assets/list-bg.png);
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    align-content: center;
+    align-items: center;
+
+}
+
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row{
+
+}
+
+#print-icon{
+    float: right;
+    display: flex;
+    flex-direction: row;
+}
+
+#print-img{
+    width: 13px;
+    height: 10px;
+}
+
+#choco-pizza{
+    width: 50%;
+    height: 50%;
+
+}
+
+#left-list{
+    border: 1px, solid, black;
+}
+
+/* 
 h1{
     font-size: 2em;
 }
@@ -24,17 +118,9 @@ h2{
 
 
 
-.flex-column{
-    display: flex;
-    flex-direction: column;
-}
 
-.flex-row{
-    display: flex;
-    flex-direction: row;
-}
 
-#print-icon{
+.float-right{
     float: right;
 }
 
@@ -45,4 +131,4 @@ h2{
 #print-icon{
     width: 13px;
     height: 10px;
-}
+} */

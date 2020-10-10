@@ -1,5 +1,9 @@
 button{
-    height: 30px
+    height: 30px;
+    color: white;
+    background-color: rgb(188, 112, 88);
+    margin-left: 20px;
+    margin-top: 20px;
 }
 
 label{
@@ -42,14 +46,15 @@ header{
     justify-content: space-between;
     flex-direction: row;
     box-shadow: 10px;
-    width: 77%;
+    width: 60%;
+    margin-top: 10px;
 }
 
 .img-rep{
     background-image: url("../assets/hr-img.png");
     background-repeat: repeat;
-    width: 800px;
-    height:20px;
+    width: 60%;
+    height:10px;
     margin: 10px;
 }
 
@@ -86,9 +91,15 @@ label{
     justify-content: space-between;
     display: flex;
     flex-direction: row;
+    
 }
 #img-bottom{
     justify-content: center;
+    
+}
+
+#van-img{
+    margin: 30px;
 }
 
 #bullet-area{

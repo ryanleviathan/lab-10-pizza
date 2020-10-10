@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pacifico&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
@@ -15,10 +17,10 @@
 <body>
     <header>
         <div id='header-left'>
-            <img src='./assets/small-logo.png'>
+            <img id='header-img' src='./assets/small-logo.png'>
             <div>
-                <h1>Delicious</h1>
-                <h2>THE BEST FOOD BLOG ON THE WEB</h2>
+                <h1 id='delicious'>Delicious</h1>
+                <h4>THE BEST FOOD BLOG ON THE WEB.</h4>
             </div>
         </div>
         <div id='header-icons'>
@@ -32,8 +34,9 @@
             <img src='./assets/mail-icon.png'>
         </div>
     </header>
-
-
+    <div class = 'img-rep'>
+        
+    </div>
     <main>
         <div id='body-top'>
             <div>
@@ -42,22 +45,23 @@
             </div>
             <div id='print-icon'>
                 <img id='print-img' src='./assets/print-icon.png'>
-                <h2>PRINT</h2>
+                <h2 id='print'>PRINT</h2>
             </div>
             
 
         </div>
         <div>
             <img id='choco-pizza' src='./assets/choco-pizza.png'>
-            <!-- <p>
-                For the fig-swirl: Melt butter over medium heat in a saucepan. Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.
+            <p>
+                For the fig-swirl: Melt butter over medium heat in a saucepan. 
+                Add brown sugar and stir to dissolve. Halve all of the figs and toss in the saucepan with water and lemon juice. Cook over medium heat, stirring frequently, until you have a chunky-jammy mixture. Add salt with one or two stirs, set aside and let cool completely.
             </p>
             <p>
                 Ice cream: In a small pot over medium heat, combine milk, and granulated sugar until sugar is completely dissolved and the milk is just barely lukewarm. Whisk in the egg yolks. Set mixture in the fridge and wait until the fig mixture is cool.
             </p>
             <p>
                 Using an ice cream machine, pour liquids into the frozen basin and process according to manufacturer instructions, i.e., let spin and thicken for 20 minutes before adding mascarpone, fig jam mixture and the nuts. Continue to process for +/- 10 minutes. Pour semi-frozen mixture into a pyrex dish, or glass tupperware. Freeze for at least two hours before serving.
-            </p> -->
+            </p>
         <div id='bullet-area'>
             <div id = 'left-list' class='flex-column'>
                 <label><input type="checkbox" /> 1 1/2 cups milk</label>
@@ -76,23 +80,26 @@
                 <label><input type="checkbox" /> 1 cup honey roasted pecans, roughly chopped</label>
             </div>
         </div>
+        <div class = 'img-rep'>
+        
+        </div>
         <div id='body-bottom'>
             <img src='./assets/van-pic.png'>
             <div>
-                <p>Vanessa Stevenson</p>
-                <p>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</p>
+                <h3>Vanessa Stevenson</h3>
+                <h3>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</h3>
             </div>
             <button>SHARE RECIPE</button>
         </div>
     </main>
     <footer>
-        <div>
-            <img src='./assets/small-logo.png'>
+        <fieldset>
+            <legend><img id='img-bottom' src='./assets/small-logo.png'></legend>
             <div>
-                <p>Delicious © 2013 · All Rights Reserved.</p>
-                <p>Proudly published by B&D Publishing</p>
+                <h3>Delicious © 2013 · All Rights Reserved.</h3>
+                <h3>Proudly published by B&D Publishing</h2>
             </div>
-        </div>
+        </fieldset>
     </footer>
 
 </body>

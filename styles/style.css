@@ -1,14 +1,34 @@
+html{
+    font-family: 'Oswald', sans-serif;
+}
+
+body{
+    display:flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
 button{
-    height: 30px;
+    height: 40px;
+    width: 125px;
     color: white;
     background-color: rgb(188, 112, 88);
     margin-left: 20px;
-    margin-top: 20px;
+    margin-top: 50px;
+    border: none;
 }
 
 label{
-    width: 200px;
+    width: 400px;
     word-wrap: normal;
+    margin: 0px;
+}
+
+input[type='checkbox']:checked + label{
+    text-decoration: line-through;
 }
 
 h1{
@@ -21,17 +41,7 @@ h2{
 }
 
 h4{
-    font-family: 'Oswald', sans-serif;
     font-size: .7em;
-}
-
-body{
-    display:flex;
-    flex-direction: column;
-    justify-items: center;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
 }
 
 p{
@@ -39,6 +49,17 @@ p{
     margin: 10px;
     font-size: 1.2em;
     text-indent: 25px;
+    color: grey;
+}
+
+fieldset{
+    border-top: 1px solid rgb(169,176,172);
+    width: 900px;
+    margin: 10px;
+    text-align: center;
+    padding: 8px;
+    color: rgb(169,176,172);
+    font-size: 12px;
 }
 
 header{
@@ -46,18 +67,22 @@ header{
     justify-content: space-between;
     flex-direction: row;
     box-shadow: 10px;
-    width: 60%;
+    width: 900px;
     margin-top: 10px;
 }
 
 .img-rep{
     background-image: url("../assets/hr-img.png");
     background-repeat: repeat;
-    width: 60%;
+    width: 900px;
     height:10px;
     margin: 10px;
 }
 
+.flex-column{
+    display: flex;
+    flex-direction: column;
+}
 
 #header-icons{
     float: right;
@@ -73,17 +98,8 @@ header{
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    margin: 15px;
-}
-
-label{
-    width: 400px;
-    margin: 5px;
-}
-
-.flex-column{
-    display: flex;
-    flex-direction: column;
+    margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 #body-bottom{
@@ -91,15 +107,8 @@ label{
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    
-}
-#img-bottom{
-    justify-content: center;
-    
-}
-
-#van-img{
-    margin: 30px;
+    color: grey;
+    width: 900px;
 }
 
 #bullet-area{
@@ -108,19 +117,31 @@ label{
     font-size: 1.25em;
     display: flex;
     flex-direction: row;
-    border: 1px, solid, black;
     background-image: url(../assets/list-bg.png);
-    justify-content: center;
+    justify-content: space-between;
     margin-top: 30px;
     margin-bottom: 30px;
     align-content: center;
     align-items: center;
-
+    word-wrap: normal;
+    font-family: 'Shadows Into Light', cursive;
 }
 
 #header-img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
+    margin-right: 10px;
+    margin-top: 3px;
+}
+
+#delicious{
+    font-family: 'Pacifico', cursive;
+    font-size: 22px;
+}
+
+#choco-text{
+    font-weight: bolder;
+    font-size: 40px;
 }
 
 #print-icon{
@@ -133,55 +154,39 @@ label{
     width: 18px;
     height: 13px;
     align-self: flex-end;
-}
-
-/* #choco-pizza{
-    width: 50%;
-    height: 50%;
-
-} */
-
-#left-list{
-    border: 1px, solid, black;
-}
-
-#delicious{
-    font-family: 'Pacifico', cursive;
-    font-size: 30px;
+    margin-right: 5px;
+    margin-bottom: 3px;
 }
 
 #print{
-    color: grey;
+    color: rgb(87, 85, 96);
     font-size: small;
     align-self: flex-end;
 }
 
-/* 
-h1{
-    font-size: 2em;
+#left-list{
+    margin-left: 80px;
 }
 
-h2{
-    font-size: .5em;
+#right-list{
+    margin-right: 20px;
 }
 
-.space-apart{
-    justify-content: space-between;
+#name{
+    font-weight: 800;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    color: rgb(87, 85, 96)
 }
 
-
-
-
-
-.float-right{
-    float: right;
+#img-bottom{
+    justify-content: center;
 }
 
-#header-text{
-    float: right;
+#van-img{
+    margin: 30px;
 }
 
-#print-icon{
-    width: 13px;
-    height: 10px;
-} */
+#van-text{
+    margin-right: 100px;
+}

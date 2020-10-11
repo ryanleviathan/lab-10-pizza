@@ -8,6 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Pacifico&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/home.css">
@@ -17,8 +18,8 @@
 <body>
     <header>
         <div id='header-left'>
-            <img id='header-img' src='./assets/small-logo.png'>
-            <div>
+            <img id='header-img' src='./assets/logo.png'>
+            <div id='header-text'>
                 <h1 id='delicious'>Delicious</h1>
                 <h4>THE BEST FOOD BLOG ON THE WEB.</h4>
             </div>
@@ -40,7 +41,7 @@
     <main>
         <div id='body-top'>
             <div>
-                <h1>Chocolate Pizza</h1>
+                <h1 id='choco-text'>Chocolate Pizza</h1>
                 <h2>POSTED ON 15 DEC 2013 / DESSERTS</h2>
             </div>
             <div id='print-icon'>
@@ -64,20 +65,20 @@
             </p>
         <div id='bullet-area'>
             <div id = 'left-list' class='flex-column'>
-                <label><input type="checkbox" /> 1 1/2 cups milk</label>
-                <label><input type="checkbox" /> 1/2 cup mascarpone</label>
-                <label><input type="checkbox" /> 1/2 tsp pink salt</label>
-                <label><input type="checkbox" /> 1 lb Black Mission Figs</label>
-                <label><input type="checkbox" /> 1/2 cup brown sugar</label>
-                <label><input type="checkbox" /> 2-4 tbsp water</label>
+                <div class='flex-row'><input type="checkbox" /><label> 1 1/2 cups milk</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1/2 cup mascarpone</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1/2 tsp pink salt</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1 lb Black Mission Figs</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1/2 cup brown sugar</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 2-4 tbsp water</label></div>
             </div>
-            <div class='flex-column'>
-                <label><input type="checkbox" /> 1 1/2 cups heavy cream</label>
-                <label><input type="checkbox" /> 1/3 cup granulated sugar</label>
-                <label><input type="checkbox" /> 2 egg yolks</label>
-                <label><input type="checkbox" /> 1 lemon, juiced</label>
-                <label><input type="checkbox" /> 2 tbsp butter</label>
-                <label><input type="checkbox" /> 1 cup honey roasted pecans, roughly chopped</label>
+            <div id = 'right-list' class='flex-column'>
+                <div class='flex-row'><input type="checkbox" /><label> 1 1/2 cups heavy cream</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1/3 cup granulated sugar</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 2 egg yolks</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1 lemon, juiced</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 2 tbsp butter</label></div>
+                <div class='flex-row'><input type="checkbox" /><label> 1 cup honey roasted pecans, roughly chopped</label></div>
             </div>
         </div>
     </main>
@@ -85,8 +86,8 @@
         </div>
         <div id='body-bottom'>
             <img id = 'van-img' src='./assets/van-pic.png'>
-            <div>
-                <h3>Vanessa Stevenson</h3>
+            <div id='van-text'>
+                <h3 id='name'>Vanessa Stevenson</h3>
                 <h3>Food enthusiast, photography fan. Add a pinch of raw foodism and that's pretty much who I am.</h3>
             </div>
             <button>SHARE RECIPE</button>
@@ -96,7 +97,7 @@
             <legend><img id='img-bottom' src='./assets/small-logo.png'></legend>
             <div>
                 <h3>Delicious © 2013 · All Rights Reserved.</h3>
-                <h3>Proudly published by B&D Publishing</h2>
+                <h3>Proudly published with Ghost.</h2>
             </div>
         </fieldset>
     </footer>
